@@ -1,0 +1,37 @@
+
+global:
+  scrape_interval: 15s
+  evaluation_interval: 15s
+
+scrape_configs:
+  - job_name: 'prometheus'
+    static_configs:
+      - targets: ['localhost:9090']
+
+  - job_name: 'auth-service'
+    static_configs:
+      - targets: ['auth-service:3001']
+
+  - job_name: 'profile-service'
+    static_configs:
+      - targets: ['profile-service:3002']
+
+  - job_name: 'match-service'
+    static_configs:
+      - targets: ['match-service:3003']
+
+  - job_name: 'chat-service'
+    static_configs:
+      - targets: ['chat-service:3004']
+
+  - job_name: 'payment-service'
+    static_configs:
+      - targets: ['payment-service:3005']
+
+  - job_name: 'kubernetes-pods'
+    kubernetes_sd_configs:
+      - role: pod
+    relabel_configs:
+      - source_labels: [__meta_kubernetes_pod_annotation_prometheus_io_scrape]
+        action: keep
+        regex: true
