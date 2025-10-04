@@ -1,0 +1,42 @@
+
+{
+  "common": {
+    "cancel": "Cancel",
+    "confirm": "Confirm",
+    "save": "Save",
+    "edit": "Edit",
+    "delete": "Delete",
+    "loading": "Loading..."
+  },
+  "auth": {
+    "login": "Log In",
+    "signup": "Sign Up",
+    "email": "Email",
+    "password": "Password",
+    "forgotPassword": "Forgot Password?",
+    "noAccount": "Don't have an account?",
+    "hasAccount": "Already have an account?"
+  },
+  "discover": {
+    "title": "Discover",
+    "noMoreProfiles": "No more profiles",
+    "checkBackLater": "Check back later for more matches!"
+  },
+  "matches": {
+    "title": "Matches",
+    "newMatch": "It's a Match!",
+    "startChatting": "Start Chatting",
+    "noMatches": "No matches yet"
+  },
+  "chat": {
+    "title": "Messages",
+    "typeMessage": "Type a message...",
+    "sendMessage": "Send"
+  },
+  "profile": {
+    "title": "Profile",
+    "editProfile": "Edit Profile",
+    "settings": "Settings",
+    "logout": "Log Out"
+  }
+}

@@ -1,0 +1,42 @@
+
+{
+  "common": {
+    "cancel": "Cancelar",
+    "confirm": "Confirmar",
+    "save": "Guardar",
+    "edit": "Editar",
+    "delete": "Eliminar",
+    "loading": "Cargando..."
+  },
+  "auth": {
+    "login": "Iniciar Sesión",
+    "signup": "Registrarse",
+    "email": "Correo Electrónico",
+    "password": "Contraseña",
+    "forgotPassword": "¿Olvidaste tu contraseña?",
+    "noAccount": "¿No tienes cuenta?",
+    "hasAccount": "¿Ya tienes cuenta?"
+  },
+  "discover": {
+    "title": "Descubrir",
+    "noMoreProfiles": "No hay más perfiles",
+    "checkBackLater": "¡Vuelve más tarde para más coincidencias!"
+  },
+  "matches": {
+    "title": "Coincidencias",
+    "newMatch": "¡Es una Coincidencia!",
+    "startChatting": "Comenzar a Chatear",
+    "noMatches": "Aún no hay coincidencias"
+  },
+  "chat": {
+    "title": "Mensajes",
+    "typeMessage": "Escribe un mensaje...",
+    "sendMessage": "Enviar"
+  },
+  "profile": {
+    "title": "Perfil",
+    "editProfile": "Editar Perfil",
+    "settings": "Configuración",
+    "logout": "Cerrar Sesión"
+  }
+}
