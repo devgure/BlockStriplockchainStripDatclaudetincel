@@ -1,0 +1,31 @@
+//package.json` (Root Workspace)
+
+{
+  "name": "etincel",
+  "version": "1.0.0",
+  "private": true,
+  "workspaces": [
+    "services/*",
+    "client/*",
+    "gateway/*",
+    "admin-dashboard"
+  ],
+  "scripts": {
+    "dev": "docker-compose -f docker-compose.dev.yml up",
+    "prod": "docker-compose up -d",
+    "build:all": "npm run build --workspaces",
+    "test": "npm run test --workspaces",
+    "db:migrate": "npm run migrate --workspace=prisma",
+    "db:seed": "ts-node scripts/seed-db.ts",
+    "k8s:deploy": "kubectl apply -f infra/k8s/",
+    "clean": "npm run clean --workspaces && docker system prune -af"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "typescript": "^5.0.0",
+    "ts-node": "^10.9.1",
+    "prettier": "^3.0.0",
+    "eslint": "^8.50.0"
+  }
+}
+```
